@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('messages', function (Blueprint $table) {
+//            $table->unsignedBigInteger('id')->autoIncrement()->unique();
+            $table->id();
+            $table->string('subject', 128);
+            $table->string('topic_id', 16)->default("general");
+            $table->text('body');
+            $table->timestamp('read_at')->nullable();
+//            $table->dateTime('created_at')->nullable();
+//            $table->dateTime('updated_at')->nullable();
+            $table->timestamps(); // timestamps handle both time created and time updated
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('messages', function (Blueprint $table) {
+            //
+        });
+    }
+};
