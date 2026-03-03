@@ -29,4 +29,5 @@ class Topic extends Model
     protected function casts(): array{
         return[];
     }
+
 }

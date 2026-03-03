@@ -36,6 +36,13 @@ class Message extends Model
         ];
     }
 
+    /**
+     *  Message is read
+     *
+     * Returns True if the message has been read
+     *
+     * @return bool
+     */
     public function isRead(): bool
     {
         return isset($this->read_at) && $this->read_at;
