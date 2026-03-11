@@ -8,7 +8,10 @@ Route::get('/', function () {
 });
 
 Route::get('contact-us', [ContactUsController::class, 'index'])
-    ->name('contact-us');
+    ->name('static.contact-us');
 
-Route::get('thankyou', [ContactUsController::class, 'thankyou'])
-    ->name('thankyou');
+Route::get('contact-us', [ContactUsController::class, 'store'])
+    ->name('static.contact-us.store');
+
+Route::get('thank-you', [ContactUsController::class, 'thank-you'])
+    ->name('static.thank-you');

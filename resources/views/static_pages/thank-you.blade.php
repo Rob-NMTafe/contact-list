@@ -1,5 +1,5 @@
 <?php
-// file path & name: resources/views/static_mages/index.blade.php
+// file path & name: resources/views/static_pages/thank-you.blade.php
 ?>
 
     <!doctype html>
@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us | {{config('app.name', 'Laravel')}}</title>
+    <title>Thank You | {{config('app.name', 'Laravel')}}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net"/>
@@ -30,12 +30,9 @@
 </head>
 <body>
 
-<h1 class="text-4xl text-blue-500">
-    Contact Us
+<h1 class="text-4xl text-red-800">
+    Thank You
 </h1>
-
-<a href="{{ route('static.thankyou') }}"
-   class="text-xl p-1 bg-blue-100">Thank You test link</a>
 
 </body>
 </html>
