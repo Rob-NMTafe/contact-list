@@ -1,5 +1,5 @@
 <?php
-// file path & name: resources/views/static_pages/thank-you.blade.php
+// file path & name: resources/views/static/thank-you.blade.php
 ?>
 
     <!doctype html>

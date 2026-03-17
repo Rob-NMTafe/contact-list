@@ -1,31 +1,4 @@
-<?php
-// file path & name: resources/views/static_mages/contact-us.blade.php
-?>
-
-    <!doctype html>
-<html lang="{{ str_replace('_', '_', app()->getLocale()) }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us | {{config('app.name', 'Laravel')}}</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net"/>
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
-
-    <!-- Styles / Scripts -->
-    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite([
-            'resources/css/app.css',
-            'resources/js/app.js',
-        ])
-    @else
-        <style>
-            /* styles not used by our page */
-        </style>
-    @endif
+<x-app-layout>
 
 </head>
 <body>
@@ -102,5 +75,4 @@
 <a href="{{ route('static.thank-you') }}"
    class="text-xl p-1 bg-blue-100">Thank You test link</a>
 
-</body>
-</html>
+</x-app-layout>

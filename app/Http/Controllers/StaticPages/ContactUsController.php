@@ -15,13 +15,13 @@ class ContactUsController extends Controller
         $topics = Topic::all();
 
         // Return the contact-us view with the topics
-        return view('static_pages.contact-us')
+        return view('web.static.contact-us')
             ->with('topics', $topics);
     }
 
     public function thankYou()
     {
-        return view('static_pages.thank-you');
+        return view('web.static.thank-you');
     }
 
     public function store(Request $request)
@@ -44,6 +44,6 @@ class ContactUsController extends Controller
                 'message' => $validated['message'],
                 'topic_id' => $validated['topic'],
             ]);
-            return redirect()->route('static.thank-you');
+            return redirect()->route('web.static.thank-you');
     }
 }
