@@ -16,26 +16,26 @@ class TopicSeeder extends Seeder
 
         $seedTopics = [
             [
-                'id'=> 1,
-                'name'=>'general',
-                'description'=>'General contact message',
-                'available'=> true,
+                'id'=>1,
+                'name' => 'general',
+                'description' => 'General contact messages',
+                'available' => true,
             ],
             [
-                'id'=> 100,
-                'name'=>'website errors',
-                'description'=>'Website errors',
-                'available'=> true,
+                'id'=>100,
+                'name' => 'website errors',
+                'description' => 'Website errors',
+                'available' => true,
             ],
             [
-                'name'=>'website oopsie',
-                'description'=>'Website errors',
-                'available'=> false,
+                'name' => 'website oopsie',
+                'description' => 'Website errors',
+                'available' => false,
             ],
             [
-                'name'=>'feedback',
-                'description'=>'Client feedback (positive and negative)',
-                'available'=> true,
+                'name' => 'feedback',
+                'description' => 'Client feedback (positive and negative)',
+                'available' => true,
             ],
 
         ];

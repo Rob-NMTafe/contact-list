@@ -1,17 +1,13 @@
 <?php
 
-use App\Http\Controllers\StaticPages\ContactUsController;
+use App\Http\Controllers\Web\StaticPages\ContactUsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('web.static.welcome');
-});
 
-Route::get('contact-us', [ContactUsController::class, 'index'])
-    ->name('web.static.contact-us');
+require __DIR__ . '/web.static.php';
 
-Route::get('contact-us', [ContactUsController::class, 'store'])
-    ->name('static.contact-us.store');
+require __DIR__ . '/web.client.php';
 
-Route::get('thank-you', [ContactUsController::class, 'thank-you'])
-    ->name('static.thank-you');
+require __DIR__ . '/web.admin.php';
+
+require __DIR__.'/auth.php';

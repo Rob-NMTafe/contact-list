@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use DateTimeInterface;
 use Illuminate\Database\Eloquent\Model;
 
 class Message extends Model
@@ -23,8 +24,7 @@ class Message extends Model
      * Hidden from serialisation attributes (fields)
      *
      */
-    protected $hidden = [
-    ];
+    protected $hidden = [];
 
     /**
      * Attribute (type) casting
@@ -32,12 +32,12 @@ class Message extends Model
      */
     protected function casts(): array{
         return [
-            'read_at' => 'datetime',
+          'read_at' => 'datetime',
         ];
     }
 
     /**
-     *  Message is read
+     * Message is read
      *
      * Returns True if the message has been read
      *

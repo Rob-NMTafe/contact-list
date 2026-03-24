@@ -13,7 +13,7 @@ class Topic extends Model
     protected $fillable = [
         'name',
         'description',
-        'available'
+        'available',
     ];
 
     /**
@@ -27,7 +27,6 @@ class Topic extends Model
      *
      */
     protected function casts(): array{
-        return[];
+        return [];
     }
-
 }
